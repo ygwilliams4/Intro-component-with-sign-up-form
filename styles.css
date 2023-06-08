@@ -8,144 +8,141 @@ main {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  outline: 2px solid purple;
   flex-direction: column;
   justify-content: center;
+  padding: 5px;
   align-items: center;
-  background-image: url("images/bg-intro-desktop.png");
+  background-image: url("images/bg-intro-mobile.png");
   background-color: hsl(0, 100%, 74%);
 }
-.container {
-  min-height: 63vh;
-  max-width: 80vw;
-  margin: 1rem;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  outline: 2px solid red;
-  padding: 1rem;
+.container{
+  padding: 10px;
+  margin: 10px 0;
 }
-.main-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.banner-text{
+  padding: 1rem;
+  text-align: center;
   color: #fff;
-  outline: 1px solid blue;
 }
-.main-text h1 {
-  font-size: 45px;
-  margin-bottom: 0.7rem;
+.banner-text h1{
+  font-size: 23px;
+  margin: 1rem 0;
 }
-.main-text p {
-  line-height: 1.4;
+.banner-text p{
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
-.form-header {
+.form-container{
+  margin-top: 1rem;
+}
+.form-header{
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
   background-color: hsl(248, 32%, 49%);
-  text-align: center;
-  color: #fff;
-  margin: 1.2rem 0;
-  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.171);
+  line-height: 1.5;
 }
-.form-header p span {
-  font-weight: 800;
+.form-header span{
+  font-weight: 900;
 }
-.form-container-inner {
+form{
   background-color: #fff;
-  height: 78%;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1rem 0;
 }
-input {
+.form-control{
+  position: relative;
+  margin: 1rem 0;
+}
+.form-control input{
   width: 100%;
+  padding: 0.9rem 0.7rem;
   outline: none;
-  border: 1px solid hsl(246, 25%, 77%);
-  border-radius: 4px;
-  margin-bottom: 1.2rem;
-  height: 45px;
-  padding: 1rem 1.3rem;
-  font-weight: 700;
-  color: hsl(249, 10%, 26%);
+  border: 2px solid hsl(246, 25%, 77%);
 }
-input:focus {
-  border: 1px solid hsl(249, 10%, 26%);
+.errorSign{
+  display: none;
 }
-#btn {
-  background-color: hsl(154, 59%, 51%);
+.errorSign.active{
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  display: block;
+}
+.error {
+  display: none;
+}
+.error.active{
+  color: red;
+  font-size: 11px;
+  display: inline;
+}
+#submit{
+  width: 100%;
+  padding: 1rem 0;
+  outline: none;
   border: none;
-  outline: none;
-  height: 45px;
   color: #fff;
-  border-radius: 4px;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 10px;
+  margin: 0.3rem 0 1rem;
   transition: all 0.5s ease;
-  margin-bottom: 0.8rem;
-  box-shadow: 0px 4px 0px hsla(154, 59%, 51%, 0.5);
 }
-#btn:hover {
+#submit:hover{
   cursor: pointer;
-  opacity: 0.7;
+  letter-spacing: 1.5px;
+  background-color: hsla(154, 59%, 51%, 0.808);
 }
-.confirmation {
-  font-size: 10px;
-  color: hsl(246, 25%, 77%);
+.terms{
+  font-size: 12px;
   text-align: center;
+  padding: 0 0.3rem;
+  color: hsl(246, 25%, 77%);
 }
-.confirmation span {
-  color: hsl(0, 100%, 74%);
+.terms span{
+  color: red;
 }
 
+  /* box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.171); */
+
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
+@media (min-width : 426px) {
+ .container{
+  max-width: 68vw;
+ }
+}
 
-
-@media (max-width: 768px) {
-  .container {
-    margin: 1rem 0;
-    max-height: fit-content;
-    padding: 0 0.4rem;
-    min-width: 99vw;
+@media (min-width : 769px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    max-width: 80vw;
+  }
+  .banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .banner-text h1{
+    font-size: 30px;
   }
 }
 
-@media (max-width: 425px) {
-  .container {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    margin: 1rem 0;
-  }
-  .main-text {
-    text-align: center;
-    padding: 2rem 0.2rem;
-  }
-  .main-text h1 {
-    font-size: 40px;
-  }
-  .main-text p {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 320px) {
-  main {
-    overflow: hidden;
-  }
-  .container {
-    margin: 0.3rem 0;
-    padding: 0.5rem;
-  }
-  .main-text h1 {
-    font-size: 35px;
-  }
-  .form-container-inner {
-    padding: 2rem 1rem;
+@media (min-width : 1025px) {
+  .container{
+    max-width: 69vw;
   }
 }
