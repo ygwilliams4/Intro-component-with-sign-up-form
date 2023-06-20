@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [View Solution Here](https://github.com/ygwilliams4/Intro-component-with-sign-up-form/)
+- Live Site URL: [View Live Site](https://ygwilliams4.github.io/Intro-component-with-sign-up-form/)
 
 ## My process
 
@@ -41,6 +41,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@ygwilliams](https://www.frontendmentor.io/profile/ygwilliams4)
+- Twitter - [@YGWILLIAMS4](https://www.twitter.com/ygwilliams4)
