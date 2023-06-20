@@ -15,58 +15,60 @@ main {
   background-image: url("images/bg-intro-mobile.png");
   background-color: hsl(0, 100%, 74%);
 }
-.container{
+.container {
   padding: 10px;
   margin: 10px 0;
 }
-.banner-text{
+.banner-text {
   padding: 1rem;
   text-align: center;
   color: #fff;
 }
-.banner-text h1{
+.banner-text h1 {
   font-size: 23px;
   margin: 1rem 0;
 }
-.banner-text p{
+.banner-text p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
-.form-container{
+.form-container {
   margin-top: 1rem;
 }
-.form-header{
+.form-header {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
   color: #fff;
   background-color: hsl(248, 32%, 49%);
   line-height: 1.5;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.171);
 }
-.form-header span{
+.form-header span {
   font-weight: 900;
 }
-form{
+form {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
   margin: 1rem 0;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.171);
 }
-.form-control{
+.form-control {
   position: relative;
   margin: 1rem 0;
 }
-.form-control input{
+.form-control input {
   width: 100%;
   padding: 0.9rem 0.7rem;
   outline: none;
   border: 2px solid hsl(246, 25%, 77%);
 }
-.errorSign{
+.errorSign {
   display: none;
 }
-.errorSign.active{
+.errorSign.active {
   position: absolute;
   top: 12px;
   right: 10px;
@@ -75,38 +77,37 @@ form{
 .error {
   display: none;
 }
-.error.active{
+.error.active {
   color: red;
   font-size: 11px;
   display: inline;
 }
-#submit{
+#submit {
   width: 100%;
   padding: 1rem 0;
   outline: none;
   border: none;
   color: #fff;
   background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 3px 0px hsl(154, 81%, 33%);
   border-radius: 10px;
   margin: 0.3rem 0 1rem;
   transition: all 0.5s ease;
 }
-#submit:hover{
+#submit:hover {
   cursor: pointer;
   letter-spacing: 1.5px;
-  background-color: hsla(154, 59%, 51%, 0.808);
+  background-color: hsla(154, 59%, 51%, 0.671);
 }
-.terms{
+.terms {
   font-size: 12px;
   text-align: center;
   padding: 0 0.3rem;
   color: hsl(246, 25%, 77%);
 }
-.terms span{
+.terms span {
   color: red;
 }
-
-  /* box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.171); */
 
 .attribution {
   font-size: 13px;
@@ -116,33 +117,33 @@ form{
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width : 426px) {
- .container{
-  max-width: 68vw;
- }
+@media (min-width: 426px) {
+  .container {
+    max-width: 68vw;
+  }
 }
 
-@media (min-width : 769px) {
-  .container{
+@media (min-width: 769px) {
+  .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     max-width: 80vw;
   }
-  .banner-text{
+  .banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
   }
-  .banner-text h1{
+  .banner-text h1 {
     font-size: 30px;
   }
 }
 
-@media (min-width : 1025px) {
-  .container{
+@media (min-width: 1025px) {
+  .container {
     max-width: 69vw;
   }
 }
